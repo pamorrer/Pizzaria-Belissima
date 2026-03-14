@@ -32,10 +32,9 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Início', href: '#home' },
-    { name: 'Diferenciais', href: '#features' },
-    { name: 'Sabores', href: '#menu' },
-    { name: 'Contato', href: '#contact' },
+    { name: 'Início', href: '#inicio' },
+    { name: 'Cardápio', href: '#menu' },
+    { name: 'Contato', href: '#contato' },
   ];
 
   const WHATSAPP_URL = "https://api.whatsapp.com/send/?phone=5511965485354&text&type=phone_number&app_absent=0";
@@ -133,7 +132,7 @@ const Hero = () => {
   const WHATSAPP_URL = "https://api.whatsapp.com/send/?phone=5511965485354&text&type=phone_number&app_absent=0";
 
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section id="inicio" className="relative h-screen flex items-center justify-center overflow-hidden">
       <motion.div style={{ y: y1 }} className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-dark/60 via-dark/40 to-dark z-10" />
         <img 
@@ -453,7 +452,7 @@ const Testimonials = () => {
 
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-dark-accent pt-32 pb-12 px-6 border-t border-white/5">
+    <footer id="contato" className="bg-dark-accent pt-32 pb-12 px-6 border-t border-white/5">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-24">
           <div className="md:col-span-2">

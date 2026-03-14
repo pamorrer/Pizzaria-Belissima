@@ -35,7 +35,6 @@ const Navbar = () => {
     { name: 'Início', href: '#home' },
     { name: 'Diferenciais', href: '#features' },
     { name: 'Sabores', href: '#menu' },
-    { name: 'Sobre', href: '#about' },
     { name: 'Contato', href: '#contact' },
   ];
 
@@ -161,7 +160,7 @@ const Hero = () => {
             Sabores exclusivos que atravessam fronteiras. Da clássica Siciliana à exótica Coreana, 
             uma experiência gastronômica luxuosa no coração da Vila Ema.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
             <motion.a
               href={WHATSAPP_URL}
               target="_blank"
@@ -180,6 +179,14 @@ const Hero = () => {
               NOSSA HISTÓRIA
             </motion.button>
           </div>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1, duration: 1 }}
+            className="text-gold/50 text-xs font-bold uppercase tracking-[0.4em]"
+          >
+            a melhor da vila ema
+          </motion.p>
         </motion.div>
       </div>
 
